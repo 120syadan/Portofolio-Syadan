@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Freelancer - Lynk.id</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background-color: rgba(75, 85, 99, 0.8);
+            /* Abu-abu elegan */
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-link:hover {
+            color: #3b82f6;
+            /* Biru */
+        }
+
+        .active {
+            color: #3b82f6;
+            /* Biru */
+            border-left: 4px solid #3b82f6;
+        }
+
+        .mobile-menu {
+            background-color: rgba(75, 85, 99, 0.95);
+            /* Abu-abu lebih gelap */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Navbar (Hamburger) -->
+    <nav class="navbar fixed top-0 left-0 w-full z-50 md:hidden">
+        <div class="container mx-auto px-5 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-white">Portofolio</h1>
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden w-full px-4 py-2">
+            <a href="#home" class="block py-3 text-white border-b border-gray-600">Home</a>
+            <a href="#about" class="block py-3 text-white border-b border-gray-600">About</a>
+            <a href="#skills" class="block py-3 text-white border-b border-gray-600">Skills</a>
+            <a href="#projects" class="block py-3 text-white border-b border-gray-600">Projects</a>
+            <a href="#contact" class="block py-3 text-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Desktop Navbar -->
+    <nav class="navbar hidden md:block fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-center space-x-8">
+                <a href="#home" class="nav-link text-white text-lg active">Home</a>
+                <a href="#about" class="nav-link text-white text-lg">About</a>
+                <a href="#skills" class="nav-link text-white text-lg">Skills</a>
+                <a href="#projects" class="nav-link text-white text-lg">Projects</a>
+                <a href="#contact" class="nav-link text-white text-lg">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="pt-16 md:pt-0">
+        <!-- Hero Section -->
+        <section id="home" class="bg-gradient-to-r from-gray-700 to-gray-800 text-white pt-24 pb-16 md:pt-32 md:pb-24">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Halo, Saya Freelancer Kreatif</h1>
+                    <p class="text-lg mb-6">Saya membantu menyelesaikan berbagai pekerjaan dengan cepat, rapi, dan tepat
+                        waktu.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact"
+                            class="bg-white text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Hubungi
+                            Saya</a>
+                        <a href="#projects"
+                            class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-800 transition duration-300">Lihat
+                            Proyek</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="img/foto daftar.jpg" alt="Profile"
+                        class="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+                <div class="md:flex items-center">
+                    <div class="md:w-1/3 md:pr-8 mb-8 md:mb-0 flex justify-center">
+                        <img src="about me.jpg"
+                            alt="Working" class="rounded-lg shadow-lg w-full max-w-md">
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-lg mb-4">Halo! Saya seorang freelancer muda yang suka banget ngerjain hal-hal
+                            berbau teknologi dan kreatif.</p>
+                        <p class="text-lg mb-4">Saya terbiasa ngetik cepat, bantuin bikin tugas, laporan, skripsi,
+                            sampai ngerapihin data di Excel biar kelihatan rapi dan gampang dibaca. Saya juga sering
+                            bikin desain presentasi (PPT) dan poster yang menarik dan nggak ngebosenin.</p>
+                        <p class="text-lg mb-4">Selain itu, saya juga hobi ngoprek Arduino dan elektronik – mulai dari
+                            sensor, relay, motor, sampai nyusun rangkaian di PCB. Nggak cuma itu, saya juga bisa ngoding
+                            frontend pakai HTML, CSS, JavaScript, dan React buat bikin tampilan website yang keren dan
+                            responsif.</p>
+                        <p class="text-lg">Saya orangnya teliti, cepat belajar, dan selalu berusaha kasih hasil terbaik
+                            di setiap proyek. Siap bantu kamu ngerjain pekerjaan secara rapi dan tepat waktu!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">My Skills</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl p-6 shadow-md transition duration-300">
+                        <div class="text-blue-500 mb-4">
+                            <i class="fas fa-keyboard text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Pengetikan Cepat</h3>
+                        <p>Mampu mengetik dengan cepat dan akurat untuk berbagai kebutuhan dokumen dan laporan.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md transition duration-300">
+                        <div class="text-blue-500 mb-4">
+                            <i class="fas fa-file-excel text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Pengolahan Data Excel</h3>
+                        <p>Mengelola dan merapikan data dalam Excel dengan formula, pivot table, dan visualisasi data.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md transition duration-300">
+                        <div class="text-blue-500 mb-4">
+                            <i class="fas fa-file-powerpoint text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Desain Presentasi</h3>
+                        <p>Mendesain slide PPT yang menarik dengan layout profesional dan konten yang jelas.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md transition duration-300">
+                        <div class="text-blue-500 mb-4">
+                            <i class="fas fa-microchip text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Arduino & Elektronik</h3>
+                        <p>Membangun proyek elektronik dengan Arduino, sensor, relay, motor, dan PCB custom.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md transition duration-300">
+                        <div class="text-blue-500 mb-4">
+                            <i class="fas fa-laptop-code text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Frontend Development</h3>
+                        <p>Membangun website responsif dengan HTML, CSS, JavaScript, dan framework seperti React.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md transition duration-300">
+                        <div class="text-blue-500 mb-4">
+                            <i class="fas fa-bolt text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Cepat Belajar</h3>
+                        <p>Mampu mempelajari tools dan teknologi baru dengan cepat untuk menyelesaikan proyek.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+        
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-grid">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg transition duration-300">
+                        <img src="img/Daftar-Inventaris.jpg" alt="Data Analysis" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Analisis Data Excel</h3>
+                            <p class="text-gray-600 mb-4">Merapikan data dan membuat daftar inventaris kantor excel dengan
+                                Manual.</p>
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Excel</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full text-sm font-semibold">Data Inventaris</span>
+                        </div>
+                    </div>
+        
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg transition duration-300">
+                        <img src="img/Screenshot 2025-06-20 163318.png" alt="Presentation" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Desain Presentasi</h3>
+                            <p class="text-gray-600 mb-4">Membuat 17 slide presentasi seminar dengan desain profesional dan
+                                animasi.</p>
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">PowerPoint</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full text-sm font-semibold">Animasi</span>
+                        </div>
+                    </div>
+        
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg transition duration-300">
+                        <img src="img/dekstopoo.png" alt="Web Undangan" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Web Undangan Digital</h3>
+                            <p class="text-gray-700 mb-4">Membuat website undangan pernikahan online dengan fitur RSVP, lokasi
+                                Google Maps, dan galeri foto.</p>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full text-sm font-semibold">Website</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full text-sm font-semibold">RSVP</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full text-sm font-semibold">Google Maps</span>
+                        </div>
+                    </div>
+        
+                    <!-- Card 4 (disembunyikan awalnya) -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hidden"
+                    id="extra-project-1">
+                        <img src="img/bikinan.jpg" alt="Arduino Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Proyek Arduino</h3>
+                            <p class="text-gray-600 mb-4">Membuat sistem penyiram tanaman otomatis dengan sensor kelembaban
+                                tanah.</p>
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Arduino</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full text-sm font-semibold">Penyiram Otomatis</span>
+                        </div>
+                    </div>
+        
+                    <!-- Card 5 (disembunyikan awalnya) -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hidden"
+                        id="extra-project-2">
+                        <img src="img/kerenn3.jpg" alt="Presentation" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Desain Teknik 2D & Isometrik</h3>
+                            <p class="text-gray-600 mb-4">Membuat gambar teknik sederhana dalam bentuk 2D dan isometrik menggunakan AutoCAD, cocok untuk tugas atau kebutuhan dasar desain teknis.</p>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full text-sm font-semibold">AutoCAD</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full text-sm font-semibold">2D Teknik</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full text-sm font-semibold">Isometrik</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Tombol "Lihat Lebih Banyak" -->
+                <div class="text-center mt-12">
+                    <a href="#" id="show-more-btn"
+                        class="inline-block bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                        Lihat Lebih Banyak Proyek
+                    </a>
+                </div>
+            </div>
+        </section>
+<!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gradient-to-r from-gray-700 to-gray-800 text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
+                <div class="md:flex justify-between">
+                    <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+                        <h3 class="text-xl font-semibold mb-4">Tersedia untuk Proyek Freelance</h3>
+                        <p class="mb-6">Saya siap membantu menyelesaikan pekerjaan Anda dengan hasil terbaik. Jangan
+                            ragu untuk menghubungi saya melalui form atau kontak berikut:</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-4 text-xl"></i>
+                                <span>rogrzsyadan@gmail.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone mr-4 text-xl"></i>
+                                <span>+62 852-8185-2838</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-whatsapp mr-4 text-xl"></i>
+                                <span>+62 852-8185-2838</span>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex space-x-4">
+                            <a href="https://wa.me/6285281852838"
+                                class="bg-white text-gray-800 p-3 rounded-full hover:bg-gray-100 transition duration-300">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://instagram.com/rsyadaan"
+                                class="bg-white text-gray-800 p-3 rounded-full hover:bg-gray-100 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/rogrz"
+                                class="bg-white text-gray-800 p-3 rounded-full hover:bg-gray-100 transition duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 bg-white rounded-lg shadow-xl p-6">
+                        <form action="https://formspree.io/f/xkgbvznw" method="POST">
+                            <div class="md:w-1/2 bg-white rounded-lg shadow-xl p-6">
+                            
+                                <!-- Nama -->
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 font-medium mb-2" for="name">Nama</label>
+                                    <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required
+                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 placeholder-gray-400" />
+                                </div>
+                        
+                                <!-- Email -->
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required
+                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 placeholder-gray-400" />
+                                </div>
+                        
+                                <!-- Subjek -->
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 font-medium mb-2" for="subject">Subjek</label>
+                                    <input type="text" id="subject" name="subject" placeholder="Contoh: Web Undangan"
+                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 placeholder-gray-400" />
+                                </div>
+                        
+                                <!-- Pesan -->
+                                <div class="mb-6">
+                                    <label class="block text-gray-700 font-medium mb-2" for="message">Pesan</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="Tulis pesan kamu di sini..." required
+                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 placeholder-gray-400"></textarea>
+                                </div>
+                        
+                                <!-- Tombol Kirim -->
+                                <button type="submit"
+                                    class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-300">
+                                    Kirim Pesan
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="md:flex justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold">Portofolio Freelancer</h3>
+                        <p class="text-gray-400">Siap membantu berbagai kebutuhan project Anda</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="https://www.facebook.com/Ocad-Sorce/" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/rsyadaan" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/rogrz" class="text-gray-300 hover:text-white transition duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                    <p>© 2025 Portofolio Freelancer. Semua hak dilindungi.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', function () {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+            const toggleBtn = document.getElementById("show-more-btn");
+                const extra1 = document.getElementById("extra-project-1");
+                const extra2 = document.getElementById("extra-project-2");
+
+                toggleBtn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const isHidden = extra1.classList.contains("hidden");
+                    extra1.classList.toggle("hidden");
+                    extra2.classList.toggle("hidden");
+                    toggleBtn.textContent = isHidden ? "Sembunyikan Proyek" : "Lihat Lebih Banyak Proyek";
+                });
+
+
+
+    </script>
+</body>
+
+</html>
